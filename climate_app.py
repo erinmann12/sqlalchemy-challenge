@@ -103,14 +103,12 @@ def tobs():
 def start(date):
     #Create session 
     session = Session(engine)
-
-    #create datetime object for start date
-    start_date = dt.datetime.strptime(date, "%Y-%m-%d")
     
     #query all dates
     start_date_results = session.query(Measurement.date, func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs))\
-        .filter(Measurement.date >= start_date).all()
+        .filter(Measurement.date >= date).all()
 
+    print(start_date_results)
     session.close()
 
     #convert results into list
@@ -122,14 +120,10 @@ def start(date):
 def startend(start,end):
     #Create session 
     session = Session(engine)
-
-    #create datetime object for start date
-    start_date = dt.datetime.strptime(start, "%Y-%m-%d")
-    end_date = dt.datetime.strptiime(end, "%Y-%m-%d")
     
     #query all dates
-    date__range_results = session.query(Measurement.date, func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs))\
-        .filter(Measurement.date >= start_date).filter(Measurement.date <= end_date).all()
+    date_range_results = session.query(Measurement.date, func.min(Measurement.tobs), func.avg(Measurement.tobs), func.max(Measurement.tobs))\
+        .filter(Measurement.date >= start).filter(Measurement.date <= end).all()
 
     session.close()
 
