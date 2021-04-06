@@ -34,3 +34,8 @@ There were five available apps for the user to navigate to. Below is an example 
 
 ![](https://github.com/erinmann12/sqlalchemy-challenge/blob/main/Images/precipitation.PNG)
 
+----------------------------------------------------------------------------------------------------------------
+
+Erin Mann
+
+erin.mann2019@gmail.com
