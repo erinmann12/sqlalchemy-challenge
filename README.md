@@ -22,6 +22,8 @@ Next I designed a query to retrieve the last 12 months of precipitation data. I 
 
 ![](https://github.com/erinmann12/sqlalchemy-challenge/blob/main/Images/precipitationanalysis.png)
 
+For the station analysis, I designed a query to calculate the total number of stations and to find the most active stations. Next I designed a query to retrieve the last 12 months of temperature observation data and plotted the results in a histogram. 
+
 ![](https://github.com/erinmann12/sqlalchemy-challenge/blob/main/Images/tempanalysis.png)
 
 In step two, I was tasked with designing a Flask API based on the queries that were developed in step one. 
