@@ -18,7 +18,7 @@ In step one of this project, I was tasked with using Python and SQLAlchemy to do
 
 ![](https://github.com/erinmann12/sqlalchemy-challenge/blob/main/Images/datasample.PNG)
 
-After the initial analysis was done, I created two different maps with Matplotlib. 
+Next I designed a query to retrieve the last 12 months of precipitation data. I loaded the query results into a Pandas DataFrame and sorted the values by date. After the initial analysis was done, I used the DataFrame plot method to plot the precipitation data. I then used Pandas to print the summary statistics. 
 
 ![](https://github.com/erinmann12/sqlalchemy-challenge/blob/main/Images/precipitationanalysis.png)
 
